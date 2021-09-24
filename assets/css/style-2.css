@@ -12,6 +12,7 @@ a {
 
 i {
   color: #fff;
+  font-size: 1.3rem;
 }
 
 /**********************/
@@ -32,6 +33,7 @@ header {
   left: 0;
   width: 100%;
   padding-top: 10px;
+  z-index: 100;
 }
 
 .logo {
@@ -57,7 +59,29 @@ nav ul li a {
   padding: 0 20px;
   color: #fff;
   text-decoration: none;
+
 }
+
+nav ul li a :hover{
+
+}
+/*
+nav ul li a ::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 0;
+  height: 1px;
+  background: #fff;
+  transition: all 0.4s;
+}
+*/
+/*
+nav ul li :hover nav ul li a ::after{
+  width: 100%;
+}
+*/
 
 /**********************/
 /*--ヘッダー--*/
@@ -175,6 +199,11 @@ body {
   text-decoration: none;
 }
 
+.newslist li a :hover {
+  color: #7d7d7d;
+  opacity: 0.8;
+}
+
 /*--ボタン--*/
 .btnarea {
   margin: 50px auto;
@@ -191,8 +220,8 @@ body {
   transition: .4s;
 }
 
-.btn :hover {
-  background: #343434;
+.btnarea :hover {
+  background: #4e454a;
   color: white;
 }
 
@@ -299,7 +328,9 @@ body {
 }
 
 /*--フッター--*/
-footer {}
+footer {
+  background: #e8e1d8;
+}
 
 .footer-logo {
   display: flex;
@@ -311,7 +342,7 @@ footer .footer_home img {
   margin-bottom: 50px;
 }
 
-.footer_home p{
+.footer_home p {
   text-align: center;
   margin: 50px auto 15px auto;
 }
@@ -323,7 +354,6 @@ footer .footer_home img {
 .footer-list ul {
   list-style-type: none;
   text-align: center;
-  
   padding: 0;
   margin-bottom: 50px;
 }
@@ -334,24 +364,36 @@ footer .footer_home img {
   text-decoration: none;
   padding-left: 13px;
   padding-right: 13px;
-
 }
 
 .footer-list li+li {
   border-left: 1px solid #4e454a;
 }
 
-.footer-list li a {
+.footer-list ul li a {
   color: #4e454a;
   text-decoration: none;
   text-align: center;
 }
-.icon{
+
+.footer-list li :hover{
+  opacity: 0.8;
+}
+
+.icon {
   display: flex;
   justify-content: center;
   margin: 5px;
 }
-.icon i{
-  color: #4e454a;
+
+.icon a {
   padding: 10px;
+}
+
+.icon a :hover{
+  opacity: 0.8;
+}
+
+.icon a i{
+  color: #4e454a;
 }
