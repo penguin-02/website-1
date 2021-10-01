@@ -337,9 +337,13 @@ footer {
   justify-content: center;
 }
 
-footer .footer_home img {
+.footer_home img{
   height: 100px;
   margin-bottom: 50px;
+}
+
+.footer_home img:hover{
+  opacity: 0.8;
 }
 
 .footer_home p {
