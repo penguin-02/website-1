@@ -59,38 +59,27 @@ nav ul li a {
   padding: 0 20px;
   color: #fff;
   text-decoration: none;
-
+  transition: .4s;
 }
 
-nav ul li a :hover{
+nav ul li a i {
+  transition: .4s;
+}
 
+header nav ul li :hover {
+  color: #4e454a;
 }
-/*
-nav ul li a ::after{
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -8px;
-  width: 0;
-  height: 1px;
-  background: #fff;
-  transition: all 0.4s;
-}
-*/
-/*
-nav ul li :hover nav ul li a ::after{
-  width: 100%;
-}
-*/
 
 /**********************/
 /*--ヘッダー--*/
 body {
   margin: 0 auto;
+  padding: 0;
   font-family: 'Kaisei Decol', serif;
   font-size: 18px;
   color: #4e454a;
   background-color: #fbfaf5;
+  display: flex;
   justify-content: center;
 }
 
@@ -183,12 +172,12 @@ body {
   align-items: center;
   /*align-items: flex-start;*/
   padding: 20px 10px;
-  border-top: 1px solid #bcbcbc;
+  border-top: 1px solid #4e454a;
   line-height: 1.5;
 }
 
 .newslist li:last-child {
-  border-bottom: 1px solid #bcbcbc;
+  border-bottom: 1px solid #4e454a;
 }
 
 .newslist li time {
@@ -196,12 +185,11 @@ body {
 }
 
 .newslist li a {
-  color: #7d7d7d;
+  color: #747474;
   text-decoration: none;
 }
 
 .newslist li a :hover {
-  color: #7d7d7d;
   opacity: 0.8;
 }
 
@@ -231,8 +219,13 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
-  background: url(/Users/grizzly/Desktop/website-project-1/assets/img/p0005_l.png);
+  background: url(../img/01-whitepaper.png);
   z-index: 999;
+}
+
+.area_home_menu .body_home{
+  display: flex;
+  justify-content: center;
 }
 
 .items {
@@ -263,14 +256,111 @@ body {
   background: gray;
 }
 
+
 .box img {
   width: 300px;
   height: 300px;
   margin: 0 auto;
+  transition-duration: .35s;
+}
+
+.box a :hover{
+  transition-duration: .35s;
+  filter: grayscale(70%);
+
 }
 
 .box p {
   margin: 0 auto;
+}
+
+/* モーダル全体(背景＋本体) */
+.modal {
+  display: none;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 9999;
+}
+
+/* モーダル背景 */
+.modal-bg {
+  position: absolute;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* モーダル本体 */
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: scroll;
+  /* はみ出た部分はスクロールさせる */
+  height: 600px;
+  /* これが無いと「overflow:scroll」が利かない */
+  width: 350px;
+  /* これが無いと「overflow:scroll」が利かない */
+  background: #fbfaf5;
+  padding: 35px;
+  display: block;
+  align-items: center;
+}
+
+/* モーダルウィンドウ表示中に記事本体を固定 */
+body.fixed {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+}
+
+.modal-content img{
+  height: 300px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.modal-content p{
+  text-align: left;
+}
+
+.modal-content .yen{
+  text-align: right;
+}
+
+.yen span{
+  font-size: 9.5px;
+  padding-right: 3px;
+}
+
+.modal-con-text{
+  margin: 0 27px;
+
+}
+
+.closebtn{
+  margin: 8px auto;
+}
+
+.closebtn a{
+  text-decoration: none;
+  color: #4e454a;
+  display: inline-block;
+  padding: 0.3em 0.8em;
+  border: solid 1px #4e454a;
+  transition: .4s;
+}
+
+.closebtn :hover{
+  background: #4e454a;
+  color: white;
 }
 
 /*--コンセプト--*/
@@ -298,16 +388,20 @@ body {
   position: absolute;
   right: -20px;
   top: 15px;
-  width: 520px;
-  height: 230px;
-  background: #fff;
+  width: 490px;
+  height: 205px;
+  background: #fbfaf5;
   padding: 20px;
   margin: 0 auto;
 }
 
 .concept-txt-box {
   color: #4e454a;
-  margin: 25px;
+  margin: 20px;
+}
+
+.concept-txt-box p{
+  margin: 10px auto;
 }
 
 .concept-txt h3 {
@@ -338,12 +432,12 @@ footer {
   justify-content: center;
 }
 
-.footer_home img{
+.footer_home img {
   height: 100px;
   margin-bottom: 50px;
 }
 
-.footer_home img:hover{
+.footer_home img:hover {
   opacity: 0.8;
 }
 
@@ -381,7 +475,7 @@ footer {
   text-align: center;
 }
 
-.footer-list li :hover{
+.footer-list li :hover {
   opacity: 0.8;
 }
 
@@ -395,10 +489,16 @@ footer {
   padding: 10px;
 }
 
-.icon a :hover{
+.icon a :hover {
   opacity: 0.8;
 }
 
-.icon a i{
+.icon a i {
   color: #4e454a;
+}
+.copyright{
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+
 }

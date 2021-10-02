@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="assets/css/style-2.4.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.2.1/font-awesome-animation.css" type="text/css" media="all" />
+  <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="assets/js/jquery-2.4.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <header>
+    <a href="" class="logo">
+      <img src="assets/img/same-coffee-logo-w.svg" alt="logo">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="">News</a></li>
+        <li><a href="">Menu</a></li>
+        <li><a href="">Concept</a></li>
+        <li><a href="">Access</a></li>
+        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="area_top_view">
+      <div class="container">
+        <div class="square"></div>
+        <img src="assets/img/same-coffee-logo-b.svg" alt="logo">
+        <p class="ttl">あなたを癒やすとっておきの場所</p>
+
+      </div>
+    </div>
+    <!--News-->
+    <section class="area_home_news">
+      <div class="container">
+        <div class="head_home">
+          <h2 class="ttl">News</h2>
+        </div>
+        <div class="body_home">
+          <ul class="newslist">
+            <li>
+              <time datetime="2021-09-10">2021.09.10</time>
+              <a href="">
+                <p>9月13日にオープンします。是非お越しください。</p>
+              </a>
+            </li>
+            <li>
+              <time datetime="2021-10-14">2021.10.14</time>
+              <a href="">
+                <p>【臨時休業のお知らせ】10月20日〜23日まで休業いたします。</p>
+              </a>
+            </li>
+            <li>
+              <time datetime="2021-12-20">2021.12.20</time>
+              <a href="">
+                <p>【年末年始のお知らせ】12月30日〜1月3日まで休業いたします。</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="btnarea">
+          <a href="" class="btn">More</a>
+        </div>
+      </div>
+    </section>
+    <!--Menu-->
+    <section class="area_home_menu">
+      <div class="container">
+        <div class="head_home">
+          <h2 class="ttl">Menu</h2>
+        </div>
+        <div class="body_home">
+          <div class="items">
+            <div class="items-top">
+              <div class="box"><a href="" class="js-modal-open" data-target="modal01"><img src="assets/img/iced-coffee-4x.png" alt="menu1"></a>
+                <p>アイスコーヒー</p>
+              </div>
+              <div class="box"><a href="" class="js-modal-open" data-target="modal02"><img src="assets/img/cappuccino-4x.png" alt="menu2"></a>
+                <p>カプチーノ</p>
+              </div>
+              <div class="box"><a href="" class="js-modal-open" data-target="modal03"><img src="assets/img/espresso-4x.png" alt="menu3"></a>
+                <p>エスプレッソ</p>
+              </div>
+            </div>
+            <div class="items-bottom">
+              <div class="box"><a href="" class="js-modal-open" data-target="modal04"><img src="assets/img/cafe-latte-4x.png" alt="menu4"></a>
+                <p>カフェラテ</p>
+              </div>
+              <div class="box"><a href="" class="js-modal-open" data-target="modal05"><img src="assets/img/french-toast-4x.png" alt="menu5"></a>
+                <p>フレンチトースト</p>
+              </div>
+              <div class="box"><a href="" class="js-modal-open" data-target="modal06"><img src="assets/img/pan-cakes-4x.png" alt="menu6"></a>
+                <p>パンケーキ</p>
+              </div>
+            </div>
+          </div>
+          <!--モーダルウィンドウ-アイスコーヒー-->
+          <div id="modal01" class="modal js-modal">
+            <div class="modal-bg js-modal-close">
+            </div>
+            <div class="modal-content">
+              <img src="assets/img/iced-coffee-4x.png" alt="menu5">
+              <div class="modal-con-text">
+                <p>Same Coffee独自に配合した卵液ソースを24時間じっくりと漬け込み、外はカリッと香ばしく、中はプリンのようなやわらかい食感になるように焼き上げました。そこに、いちごと生クリームたっぷりと盛り付けました。</p>
+                <p class="yen">650円<span>(税込み)</span></p>
+              </div>
+              <div class="closebtn">
+                <a href="" class="js-modal-close">close</a>
+              </div>
+            </div>
+          </div>
+          <!--モーダルウィンドウ-カプチーノ-->
+          <div id="modal02" class="modal js-modal">
+            <div class="modal-bg js-modal-close">
+            </div>
+            <div class="modal-content">
+              <img src="assets/img/cappuccino-4x.png" alt="menu5">
+              <div class="modal-con-text">
+                <p>Same Coffee独自に配合した卵液ソースを24時間じっくりと漬け込み、外はカリッと香ばしく、中はプリンのようなやわらかい食感になるように焼き上げました。そこに、いちごと生クリームたっぷりと盛り付けました。</p>
+                <p class="yen">650円<span>(税込み)</span></p>
+              </div>
+              <div class="closebtn">
+                <a href="" class="js-modal-close">close</a>
+              </div>
+            </div>
+          </div>
+          <!--モーダルウィンドウ-エスプレッソ-->
+          <div id="modal03" class="modal js-modal">
+            <div class="modal-bg js-modal-close">
+            </div>
+            <div class="modal-content">
+              <img src="assets/img/espresso-4x.png" alt="menu5">
+              <div class="modal-con-text">
+                <p>Same Coffee独自に配合した卵液ソースを24時間じっくりと漬け込み、外はカリッと香ばしく、中はプリンのようなやわらかい食感になるように焼き上げました。そこに、いちごと生クリームたっぷりと盛り付けました。</p>
+                <p class="yen">650円<span>(税込み)</span></p>
+              </div>
+              <div class="closebtn">
+                <a href="" class="js-modal-close">close</a>
+              </div>
+            </div>
+          </div>
+          <!--モーダルウィンドウ-カフェラテ-->
+          <div id="modal04" class="modal js-modal">
+            <div class="modal-bg js-modal-close">
+            </div>
+            <div class="modal-content">
+              <img src="assets/img/cafe-latte-4x.png" alt="menu5">
+              <div class="modal-con-text">
+                <p>Same Coffee独自に配合した卵液ソースを24時間じっくりと漬け込み、外はカリッと香ばしく、中はプリンのようなやわらかい食感になるように焼き上げました。そこに、いちごと生クリームたっぷりと盛り付けました。</p>
+                <p class="yen">650円<span>(税込み)</span></p>
+              </div>
+              <div class="closebtn">
+                <a href="" class="js-modal-close">close</a>
+              </div>
+            </div>
+          </div>
+          <!--モーダルウィンドウ-フレンチトースト-->
+          <div id="modal05" class="modal js-modal">
+            <div class="modal-bg js-modal-close">
+            </div>
+            <div class="modal-content">
+              <img src="assets/img/french-toast-4x.png" alt="menu5">
+              <div class="modal-con-text">
+                <p>Same Coffee独自に配合した卵液ソースを24時間じっくりと漬け込み、外はカリッと香ばしく、中はプリンのようなやわらかい食感になるように焼き上げました。そこに、いちごと生クリームたっぷりと盛り付けました。</p>
+                <p class="yen">650円<span>(税込み)</span></p>
+              </div>
+              <div class="closebtn">
+                <a href="" class="js-modal-close">close</a>
+              </div>
+            </div>
+          </div>
+          <!--モーダルウィンドウ-パンケーキ-->
+          <div id="modal06" class="modal js-modal">
+            <div class="modal-bg js-modal-close">
+            </div>
+            <div class="modal-content">
+              <img src="assets/img/pan-cakes-4x.png" alt="menu5">
+              <div class="modal-con-text">
+                <p>Same Coffee独自に配合した卵液ソースを24時間じっくりと漬け込み、外はカリッと香ばしく、中はプリンのようなやわらかい食感になるように焼き上げました。そこに、いちごと生クリームたっぷりと盛り付けました。</p>
+                <p class="yen">650円<span>(税込み)</span></p>
+              </div>
+              <div class="closebtn">
+                <a href="" class="js-modal-close">close</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="btnarea">
+          <a href="" class="btn">More</a>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!--Concept-->
+    <section class="area_home_concept">
+      <div class="container">
+        <div class="head_home">
+          <h2 class="ttl">Concept</h2>
+        </div>
+        <div class="body_home">
+          <div class="concept-bg">
+            <img src="assets/img/concept-img.jpeg" alt="concept-img">
+          </div>
+          <div class="concept-txt">
+            <div class="concept-txt-box">
+              <h3>あなたを癒やすとっておきの場所</h3>
+              <p>日常の中でほっと一息つける空間を目指して「Same Coffee」は誕生しました。<br>
+                毎日、豆を自家焙煎して注文を受けてから一杯ずつ丁寧にコーヒーを淹れています。<br>
+                Same Coffeeでお待ちしております。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Access-->
+    <section class="area_home_access">
+      <div class="container">
+        <div class="head_home">
+          <h2 class="ttl">Access</h2>
+        </div>
+        <div class="body_home">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3205.9920166256948!2d136.62566031555704!3d36.53018698000508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff835c99f29526f%3A0xea6c85898888990a!2z6YeR5rKi5bel5qWt5aSn5a2m!5e0!3m2!1sja!2sjp!4v1632206872028!5m2!1sja!2sjp"
+            width="1920px" height="560" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <section class="area_home_footer">
+        <div class="footer_home">
+          <div class="footer-logo">
+            <a href=""><img src="assets/img/same-coffee-logo-b.svg" alt="logo"></a>
+          </div>
+          <div class="footer-list">
+            <ul>
+              <li><a href="">News</a></li>
+              <li><a href="">Menu</a></li>
+              <li><a href="">Concept</a></li>
+              <li><a href="">Access</a></li>
+            </ul>
+          </div>
+          <div class="icon">
+            <a href=""><i class="fab fa-twitter faa-wrench animated"></i></a>
+            <a href=""><i class="fab fa-instagram faa-wrench animated"></i></a>
+          </div>
+        </div>
+      </section>
+      <p class="copyright">©grizzly</p>
+    </footer>
+  </main>
+</body>
+
+</html>
