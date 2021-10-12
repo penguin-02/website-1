@@ -223,7 +223,7 @@ body {
   z-index: 999;
 }
 
-.area_home_menu .body_home{
+.area_home_menu .body_home {
   display: flex;
   justify-content: center;
 }
@@ -256,7 +256,6 @@ body {
   background: gray;
 }
 
-
 .box img {
   width: 300px;
   height: 300px;
@@ -264,10 +263,9 @@ body {
   transition-duration: .35s;
 }
 
-.box a :hover{
+.box a :hover {
   transition-duration: .35s;
   filter: grayscale(70%);
-
 }
 
 .box p {
@@ -320,36 +318,35 @@ body.fixed {
   left: 0;
 }
 
-.modal-content img{
+.modal-content img {
   height: 300px;
   margin: 0;
   padding: 0;
   text-align: center;
 }
 
-.modal-content p{
+.modal-content p {
   text-align: left;
 }
 
-.modal-content .yen{
+.modal-content .yen {
   text-align: right;
 }
 
-.yen span{
+.yen span {
   font-size: 9.5px;
   padding-right: 3px;
 }
 
-.modal-con-text{
+.modal-con-text {
   margin: 0 27px;
-
 }
 
-.closebtn{
+.closebtn {
   margin: 8px auto;
 }
 
-.closebtn a{
+.closebtn a {
   text-decoration: none;
   color: #4e454a;
   display: inline-block;
@@ -358,7 +355,7 @@ body.fixed {
   transition: .4s;
 }
 
-.closebtn :hover{
+.closebtn :hover {
   background: #4e454a;
   color: white;
 }
@@ -400,7 +397,7 @@ body.fixed {
   margin: 20px;
 }
 
-.concept-txt-box p{
+.concept-txt-box p {
   margin: 10px auto;
 }
 
@@ -496,9 +493,9 @@ footer {
 .icon a i {
   color: #4e454a;
 }
-.copyright{
+
+.copyright {
   margin: 0 auto;
   padding: 20px;
   text-align: center;
-
 }
